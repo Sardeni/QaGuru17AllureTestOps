@@ -5,8 +5,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
-import static com.sardeni.pages.MainPage.searchInput;
-import static com.sardeni.pages.MainPageForEmployers.*;
 import static io.qameta.allure.Allure.step;
 
 public class MainPageForEmployers extends TestBase {

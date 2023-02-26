@@ -10,10 +10,8 @@ public class MainPageForEmployers {
 
     public SelenideElement
             title = $("[data-qa=employer-index-title]"),
-
-    subtitle = $("[data-qa=employer-index-subtitle]"),
-
-    publishVacancyButton = $("[data-qa=employer-index-publish-vacancy]"),
+            subtitle = $("[data-qa=employer-index-subtitle]"),
+            publishVacancyButton = $("[data-qa=employer-index-publish-vacancy]"),
             searchEmployeeInput = $("[data-qa=employer-index-search-input]"),
             findEmployeeButton = $("[data-qa=employer-index-search-submit]");
 
