@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class MainPageForEmployers {
 
-    public static SelenideElement
+    public SelenideElement
             title = $("[data-qa=employer-index-title]"),
 
     subtitle = $("[data-qa=employer-index-subtitle]"),

@@ -23,23 +23,23 @@ public class MainPageForEmployers extends TestBase {
         open("/employer");
 
         step("Checking title", () -> {
-            mainPageForEmployers.checkElementText(title, forEmployersTitle);
+            mainPageForEmployers.checkElementText(mainPageForEmployers.title, forEmployersTitle);
         });
 
         step("Checking subtitle", () -> {
-            mainPageForEmployers.checkElementText(subtitle, forEmployersSubtitle);
+            mainPageForEmployers.checkElementText(mainPageForEmployers.subtitle, forEmployersSubtitle);
         });
 
         step("Checking text on publish vacancy button", () -> {
-            mainPageForEmployers.checkElementText(publishVacancyButton, "Разместить вакансию");
+            mainPageForEmployers.checkElementText(mainPageForEmployers.publishVacancyButton, "Разместить вакансию");
         });
 
         step("Checking text in search resume input", () -> {
-            mainPageForEmployers.checkElementAttribute(searchEmployeeInput, "placeholder", "Поиск по резюме");
+            mainPageForEmployers.checkElementAttribute(mainPageForEmployers.searchEmployeeInput, "placeholder", "Поиск по резюме");
         });
 
         step("Checking text on find employee button", () -> {
-            mainPageForEmployers.checkElementText(findEmployeeButton, "Найти сотрудника");
+            mainPageForEmployers.checkElementText(mainPageForEmployers.findEmployeeButton, "Найти сотрудника");
         });
 
     }

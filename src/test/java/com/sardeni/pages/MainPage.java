@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class MainPage {
 
-    public static SelenideElement
+    public SelenideElement
             header = $$("h3[data-qa=bloko-header-3]").first(),
 
     createResumeButton = $("a[data-qa=signup]"),
