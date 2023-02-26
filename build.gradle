@@ -70,14 +70,14 @@ tasks.withType(Test) {
     }
 }
 
-task smoke_tests(type: Test) {
+task smoke(type: Test) {
     useJUnitPlatform {
         includeTags("smoke")
     }
     systemProperties(System.getProperties())
 }
 
-task regress_tests(type: Test) {
+task regress(type: Test) {
     useJUnitPlatform {
         includeTags("regress")
     }
