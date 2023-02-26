@@ -6,27 +6,25 @@ import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
-public class MainPageForEmployis {
+public class MainPageForEmployers {
 
     public static SelenideElement
-            mainPageheader = $("[data-qa=bloko-header-3]"),
+            title = $("[data-qa=employer-index-title]"),
 
-    createResumeButton = $("a[data-qa=signup]"),
+    subtitle = $("[data-qa=employer-index-subtitle]"),
 
-    signInButton = $("a[data-qa=login]"),
+    publishVacancyButton = $("[data-qa=employer-index-publish-vacancy]"),
+            searchEmployeeInput = $("[data-qa=employer-index-search-input]"),
+            findEmployeeButton = $("[data-qa=employer-index-search-submit]");
 
-    searchInput = $("[data-qa=search-input]"),
-            searchButton = $("button[data-qa=search-button]");
 
-    public MainPageForEmployis checkElementText(SelenideElement element, String text) {
+    public MainPageForEmployers checkElementText(SelenideElement element, String text) {
         element.shouldHave(text(text));
         return this;
     }
 
-    public MainPageForEmployis checkElementAttribute(SelenideElement element, String attirbuteType, String attirbuteValue) {
+    public MainPageForEmployers checkElementAttribute(SelenideElement element, String attirbuteType, String attirbuteValue) {
         element.shouldHave(attribute(attirbuteType, attirbuteValue));
         return this;
     }
-
-
 }

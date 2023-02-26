@@ -3,6 +3,8 @@ package com.sardeni.tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.sardeni.helpers.Attach;
+import com.sardeni.pages.MainPage;
+import com.sardeni.pages.MainPageForEmployers;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -13,6 +15,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
+
+    MainPage mainPage = new MainPage();
+    MainPageForEmployers mainPageForEmployers = new MainPageForEmployers();
 
     @BeforeAll
     static void beforeAll() {
@@ -32,8 +37,8 @@ public class TestBase {
     @BeforeEach
     void addListenerAndOpenPage() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        open("/vacancy/75860919");
     }
+
     @AfterEach
     void addAttachments() {
         Attach.screenshotAs("Last screenshot");
