@@ -33,7 +33,7 @@ dependencies {
     )
 
     allure {
-        version.set("2.21.0")
+        version.set(allureVersion)
         adapter {
             allureJavaVersion.set(allureVersion)
             aspectjVersion.set("1.9.5")
