@@ -1,6 +1,7 @@
 package com.sardeni.tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.sardeni.helpers.Attach;
 import com.sardeni.pages.MainPage;
@@ -45,5 +46,6 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        Selenide.closeWindow();
     }
 }
